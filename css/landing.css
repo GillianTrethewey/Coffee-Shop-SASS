@@ -1,0 +1,328 @@
+/************ HERO ************/
+
+.hero {
+  background-color: var(--accent-2);
+  height: 42rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero__desc {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hero__title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-lt);
+  margin-bottom: 0;
+}
+
+.hero__text {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-reg);
+}
+
+.hero__link {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-reg);
+}
+
+/********** CONTAINER FOR PRODUCT CARDS *********/
+
+.container {
+  background-color: var(--md);
+  margin: 0;
+  padding: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container__title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-lt);
+  text-align: center;
+  margin-top: 0;
+}
+
+.container__cards {
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+  padding: 1.125rem;
+}
+
+.container__link {
+  font-weight: var(--fw-ref);
+}
+
+/********** PRODUCT CARDS *********/
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--lt);
+  border-radius: 0.625rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 9px -1px;
+  margin-bottom: 2.5rem;
+  width: 20.625rem;
+  height: 27.5rem;
+}
+
+.card__image {
+  max-height: 17rem;
+  padding-top: 1.125rem;
+}
+
+.card__details {
+  background-color: var(--accent-2);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.125rem;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+}
+
+.card__text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.card__title {
+  font-size: var(--fs-med);
+  font-weight: var(--fw-lt);
+  margin: 0;
+  padding: 0;
+}
+
+.card__sub-text {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-lt);
+  margin: 0;
+  padding: 0;
+}
+
+.card__price {
+  font-size: var(--fs-med);
+  font-weight: var(--fw-reg);
+  color: var(--accent-1);
+}
+
+/************ PROMO CONTAINER ************/
+
+.promo__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 62.5rem;
+}
+
+.promo__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
+  margin-bottom: 8rem;
+}
+
+.promo__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  width: 35%;
+  height: 60%;
+}
+
+.promo__title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-lt);
+  margin: 0;
+}
+
+.promo__byline {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-reg);
+  margin-bottom: 2rem;
+}
+
+.promo__image-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.125rem;
+}
+
+.promo__image {
+  width: 3.125rem;
+}
+
+/********* PROMO GRAPHICS CAN ********/
+
+.promo__graphics-container:before {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 15px;
+  right: 15px;
+  border: 5px solid var(--accent-1);
+  width: 25rem;
+  height: 25rem;
+  position: absolute;
+}
+
+.promo__graphics-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: 25rem;
+  background-image: url("../assets/images/coldbrewbackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 25rem;
+  min-height: 25rem;
+  position: relative;
+}
+
+.promo__graphics-image {
+  position: relative;
+  bottom: 15px;
+  right: 15px;
+}
+
+/************* BANNER *************/
+
+.banner__container {
+  height: 500px;
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+}
+.banner {
+  background-color: var(--dk);
+  padding: 0;
+}
+
+.banner__text {
+  font-size: var(--fs-banner);
+  font-weight: var(--fw-reg);
+  text-align: center;
+  color: var(--lt);
+  padding: 2.5rem;
+  margin: 0;
+}
+
+.banner__text--bold {
+  font-weight: var(--fw-bold);
+  padding-left: 0.5rem;
+}
+
+/************ FOOTER ************/
+
+.footer {
+  background-color: var(--accent-2);
+  height: 18.75rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer__images-container {
+  overflow: hidden;
+}
+
+.footer__images {
+  position: relative;
+  opacity: 25%;
+  position: relative;
+  width: 7.5rem;
+  object-fit: contain;
+}
+
+.footer__images--left {
+  top: 50px;
+  left: -40px;
+}
+
+.footer__images--right {
+  top: 140px;
+  left: 15px;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3.75rem;
+  z-index: 99;
+  width: 100%;
+}
+
+.contact__title {
+  font-size: var(--fs-med);
+  font-weight: var(--fw-lt);
+}
+
+.contact__text {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-reg);
+  line-height: 0.5;
+}
+
+.contact__text--bold {
+  font-weight: var(--fw-bold);
+}
+
+.contact__image {
+  width: 3.125rem;
+  height: auto;
+}
+
+/********** ANIMATIONS **********/
+
+/**** GRAPHICS IMAGE ROTATION ****/
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.promo__graphics:hover .promo__graphics-image {
+  -webkit-animation: rotate 2s infinite linear;
+  animation: rotate 2s infinite linear;
+}
+
+/*** PROMO BANNER COLOR CHANGE ***/
+
+@keyframes color-change {
+  from {
+    background-color: var(--dk);
+  }
+  to {
+    background-color: var(--accent-1);
+  }
+}
+
+.banner {
+  -webkit-animation: rotate 2s infinite linear;
+  animation: color-change 2.5s infinite linear alternate;
+}

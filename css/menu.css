@@ -1,0 +1,133 @@
+/************ MENU HERO & BOX ************/
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lt);
+  background-image: url("../assets/images/coffee-circle.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 43.75rem;
+  width: 100%;
+}
+
+.box__container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 18.75rem;
+  height: 12.5rem;
+  background-color: var(--dk);
+  position: absolute;
+  border: 5px solid var(--dk);
+}
+
+.box--accent {
+  border: 5px solid var(--accent-1);
+  offset: 15px;
+  position: relative;
+  width: 18.75rem;
+  height: 12.5rem;
+  bottom: 15px;
+  right: 15px;
+}
+
+.box__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: var(--lt);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-lt);
+  text-align: center;
+  bottom: -15px;
+  right: 0px;
+}
+
+/*********** MENU NAV ***********/
+
+.sub-menu {
+  background-color: var(--dk);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 3.75rem;
+}
+
+.sub-menu__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-menu__item {
+  color: var(--lt);
+  list-style-type: none;
+  border-left: 4px solid var(--accent-1);
+  margin: 10px;
+  padding-left: 20px;
+}
+
+.sub-menu__link {
+  text-decoration: none;
+  color: var(--lt);
+  text-transform: uppercase;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-reg);
+}
+
+.sub-menu__link:hover {
+  color: var(--accent-1);
+}
+
+/********** MENU ITEMS **********/
+
+.container__menu {
+  margin-top: -5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--accent-2);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1.125rem;
+}
+
+.container__menu--accent {
+  background-color: var(--md);
+}
+
+.menu {
+  width: 35%;
+}
+
+.menu--accent {
+  background-color: var(--md);
+}
+
+.menu__heading-title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-lt);
+}
+
+.menu__item-title {
+  font-size: var(--fs-med);
+  font-weight: var(--fw-lt);
+}
+
+.menu__item-desc {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-reg);
+  font-style: italic;
+}
+
+.menu__item-price {
+  color: var(--accent-1);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-reg);
+}
