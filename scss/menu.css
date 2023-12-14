@@ -1,0 +1,243 @@
+:root {
+  font-size: 16px;
+  color: #393939;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.site-container {
+  max-width: 1400px;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff0ed;
+}
+.header__branding {
+  display: flex;
+  margin: 1rem;
+}
+.header__logo {
+  width: 3.125rem;
+  margin: 1.125rem 0.3125rem 0 0;
+}
+.header__link {
+  text-decoration: none;
+  color: #393939;
+}
+.header__link:hover {
+  color: #5bacc3;
+}
+.header__title {
+  font-size: 3.75rem;
+  font-weight: 300;
+  color: #393939;
+  margin: 0;
+  padding: 0;
+}
+.header__title:hover {
+  color: #5bacc3;
+}
+
+.nav__list {
+  display: flex;
+}
+.nav__item {
+  margin-top: 1.5rem;
+  margin-right: 2.5rem;
+  list-style-type: none;
+  font-size: 1.3125rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.nav__link {
+  text-decoration: none;
+  color: #393939;
+  font-size: 1.3125rem;
+  font-weight: 400;
+}
+.nav__link:active, .nav__link:hover {
+  color: #5bacc3;
+}
+
+.button {
+  background-color: #5bacc3;
+  color: #fff;
+  font-size: 1.3125rem;
+  font-weight: 400;
+  width: 11.25rem;
+  height: 3.75rem;
+  margin-bottom: 3rem;
+  border: 2px solid #5bacc3;
+  position: relative;
+}
+.button:before {
+  content: "";
+  width: 11.25rem;
+  height: 3.75rem;
+  border: 2px solid #393939;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 3px;
+  right: 3px;
+  position: absolute;
+  color: #fff;
+  font-size: 1.3125rem;
+  font-weight: 400;
+}
+.button:active:before {
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+}
+.button__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.button__group--left {
+  justify-content: flex-start;
+}
+.button__container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 11.25rem;
+  height: auto;
+}
+.button__learn-more:before {
+  content: "LEARN MORE";
+}
+.button__shop-now:before {
+  content: "SHOP NOW";
+}
+.button__view-all:before {
+  content: "VIEW ALL";
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lt);
+  background-image: url("../assets/images/coffee-circle.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 43.75rem;
+  width: 100%;
+}
+.box__container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 18.75rem;
+  height: 12.5rem;
+  background-color: #393939;
+  position: absolute;
+  border: 5px solid #393939;
+}
+.box--accent {
+  border: 5px solid #5bacc3;
+  offset: 15px;
+  position: relative;
+  width: 18.75rem;
+  height: 12.5rem;
+  bottom: 15px;
+  right: 15px;
+}
+.box__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #fff;
+  font-size: 3.75rem;
+  font-weight: 300;
+  text-align: center;
+  bottom: -15px;
+  right: 0px;
+}
+
+.sub-menu {
+  background-color: #393939;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 3.75rem;
+}
+.sub-menu__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-menu__item {
+  color: #fff;
+  list-style-type: none;
+  border-left: 4px solid #5bacc3;
+  margin: 10px;
+  padding-left: 20px;
+}
+.sub-menu__link {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.sub-menu__link:hover {
+  color: #5bacc3;
+}
+
+.container__menu {
+  margin-top: -5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff0ed;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1.125rem;
+}
+.container__menu--accent {
+  background-color: #f7f7f7;
+}
+
+.menu {
+  width: 35%;
+}
+.menu-accent {
+  background-color: #f7f7f7;
+}
+.menu__heading-title {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+.menu__item-title {
+  font-size: 2.0625rem;
+  font-weight: 300;
+}
+.menu__item-desc {
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: italic;
+}
+.menu__item-price {
+  color: #5bacc3;
+  font-size: 1.125rem;
+  font-weight: 400;
+}/*# sourceMappingURL=menu.css.map */

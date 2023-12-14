@@ -52,12 +52,12 @@
 .container__cards {
   display: flex;
   justify-content: space-around;
-  height: 500px;
+  height: 31.25rem;
   padding: 1.125rem;
 }
 
 .container__link {
-  font-weight: var(--fw-ref);
+  font-weight: var(--fw-reg);
 }
 
 /********** PRODUCT CARDS *********/
@@ -133,7 +133,7 @@
   justify-content: space-between;
   align-items: center;
   height: 80%;
-  margin-bottom: 8rem;
+  margin: 0 1rem 8rem 1rem;
 }
 
 .promo__copy {
@@ -162,6 +162,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.125rem;
+  width: 90%;
 }
 
 .promo__image {
@@ -323,6 +324,5 @@
 }
 
 .banner {
-  -webkit-animation: rotate 2s infinite linear;
   animation: color-change 2.5s infinite linear alternate;
 }

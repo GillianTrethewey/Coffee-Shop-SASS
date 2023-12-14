@@ -1,0 +1,121 @@
+@use './partials/_global.scss' as *;
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lt);
+    background-image: url("../assets/images/coffee-circle.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 43.75rem;
+    width: 100%;
+    &__container {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 18.75rem;
+        height: 12.5rem;
+        background-color: $dk;
+        position: absolute;
+        border: 5px solid $dk;
+    }
+    &--accent {
+        border: 5px solid $accent-1;
+        offset: 15px;
+        position: relative;
+        width: 18.75rem;
+        height: 12.5rem;
+        bottom: 15px;
+        right: 15px;
+    }
+    &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: $lt;
+        font-size: $fs-lg;
+        font-weight: $fw-lt;
+        text-align: center;
+        bottom: -15px;
+        right: 0px;
+    }
+}
+
+.sub-menu {
+    background-color: $dk;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 3.75rem;
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item {
+        color: $lt;
+        list-style-type: none;
+        border-left: 4px solid $accent-1;
+        margin: 10px;
+        padding-left: 20px;
+    }
+    &__link {
+        text-decoration: none;
+        color: $lt;
+        text-transform: uppercase;
+        font-size: $fs-sm;
+        font-weight: $fw-reg;
+        &:hover {
+            color: $accent-1;
+        }
+    }
+}
+.container  {
+
+    &__menu {
+        margin-top: -5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $accent-2;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 1.125rem;
+        &--accent {
+            background-color: $md;
+        }
+    }
+}
+
+.menu {
+    width: 35%;
+    &-accent {
+        background-color: $md;
+    }
+    &__heading-title {
+        font-size: $fs-lg;
+        font-weight: $fw-lt;
+    }
+    &__item {
+        &-title {
+            font-size: $fs-med;
+            font-weight: $fw-lt;
+        }
+        &-desc {
+            font-size: $fs-sm;
+            font-weight: $fw-reg;
+            font-style: italic;
+        }
+        &-price {
+            color: $accent-1;
+            font-size: $fs-sm;
+            font-weight: $fw-reg;
+        }
+    }
+}
